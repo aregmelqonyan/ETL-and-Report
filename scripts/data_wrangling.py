@@ -25,6 +25,7 @@ class DataWrangler:
     def _prepare_files(self):
         check_file_exists(self.filtered_file)
         check_file_exists(self.to_clean_file)
+        logger.info("Required files and folders are ready.")
 
     def filter_rows(self):
         with open(self.filtered_file, "a") as file:

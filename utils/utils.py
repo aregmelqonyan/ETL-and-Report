@@ -23,10 +23,17 @@ def miles_to_km(row):
     else:
         return row["Mileage"]
     
+def create_folder_if_not_exists(folder_path):
+    if folder_path and not os.path.exists(folder_path):
+        os.makedirs(folder_path, exist_ok=True)
+        
 def check_file_exists(file_path):
-     if not os.path.exists(file_path):
+    folder = os.path.dirname(file_path)
+    create_folder_if_not_exists(folder)
+
+    if not os.path.exists(file_path):
         with open(file_path, "w", encoding="utf-8"):
-            pass 
+            pass
 
 def root_path():
     PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))

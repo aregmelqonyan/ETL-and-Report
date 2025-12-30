@@ -30,9 +30,8 @@ class AutoAmScraper:
         self._init_driver()
 
     def _prepare_csv(self):
-        if not os.path.exists(self.csv_file):
-            with open(self.csv_file, "w"):
-                pass
+        utils.check_file_exists(self.csv_file)
+        logger.info(f"CSV ready at: {self.csv_file}")
 
     def _init_driver(self):
         options = Options()
