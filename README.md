@@ -63,6 +63,7 @@ ETL-and-Report/
 │   ├── data_wrangling.py
 │   ├── data_cleaning.py
 │   └── generate_report.py
+├── templates/             # html with css
 ├── utils/                 # Utility functions
 │   └── utils.py
 ├── config/                # Logging and config
