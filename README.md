@@ -97,6 +97,31 @@ The `docs/` folder contains three HTML files:
 2. **After Cleaning(after_data_clean_report.html)** – report on the data after cleaning.  
 3. **Final Report(top_queries_report.html)** – report based on business queries.
 
+## Usage
+
+After running the scraper and generating the report, you can open it in your browser:
+
+### On Windows
+```cmd
+start docs/before_data_clean_report.html
+start docs/after_data_clean_report.html
+start docs/top_queries_report.html
+```
+
+### On macOS
+```bash
+open docs/before_data_clean_report.html
+open docs/after_data_clean_report.html
+open docs/top_queries_report.html
+```
+
+### On Linux
+```bash
+xdg-open docs/before_data_clean_report.html
+xdg-open docs/after_data_clean_report.html
+xdg-open docs/top_queries_report.html
+```
+
 ## Data Folders
 
 The following folders are **created automatically** when the `scrapper.py` script is executed:
