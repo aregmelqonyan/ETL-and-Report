@@ -97,6 +97,15 @@ The `docs/` folder contains three HTML files:
 2. **After Cleaning(after_data_clean_report.html)** – report on the data after cleaning.  
 3. **Final Report(top_queries_report.html)** – report based on business queries.
 
+## Data Folders
+
+The following folders are **created automatically** when the `scrapper.py` script is executed:
+
+- `data/raw/` – contains the raw scraped data  
+- `data/processed/` – contains cleaned and processed data  
+
+You do **not** need to create these folders manually.
+
 ## Database Configuration
 
 Database connection information is stored in the `.env` file, which is **not tracked by Git**.  
